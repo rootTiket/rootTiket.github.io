@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <title>todostagram</title> 
+    </head>
+    <body>
+        <section class="container">
+            <article class="card">
+                <header>
+                    <form id = "login-form" class="hidden">
+                        <input required maxlength="15" type="text" placeholder="what is your name?"/>
+                        <button>Log In</button>
+                    </form>
+                    <div id="greeting" class="hidden">
+                        <div class="circle-image hidden">
+                            <img src="img/profile.png">
+                        </div>
+                        <div class="card-username">
+                            <span class="username"></span>
+                        </div>
+                    </div>
+                    <div class="card-time">
+                        <div id="clock">00:00</div>
+                    </div>
+                    <div class="option-more">
+                        <button class = "transparent-button"><img src="img/mark.png"></button>
+                    </div>
+                </header>
+                <hr>
+                <main>
+                    <div class="main-picture">
+                        <div id="background"></div>
+                    </div>
+                    <hr>
+                    <div class="card-container">
+                        <div class="card-buttons">
+                          <div>
+                            <button class="transparent-button"><img src="img/icons/heart.png"></button>
+                          </div>
+                          <div>
+                            <button class="transparent-button"><img src="img/icons/chat.png"></button>
+                          </div>
+                          <div>
+                            <button class="transparent-button"><img src="img/icons/paper-plane.png"></button>
+                          </div>
+                          <div class="last-card-button">
+                            <button class="transparent-button"><img src="img/icons/bookmark.png"></button>
+                          </div>
+                        </div>
+                    <div class="card-content">
+                        <ul>
+                          <li>
+                            <div>
+                              <span>Todays Todo</span>
+                              <ul id = "todo-list"></ul>                               
+                            </div>
+                          </li>
+                        </ul>
+                    </div>
+                </main>
+                <footer class="card-comment">
+                    <form id="todo-form">
+                            <input type="text" placeholder="Add a Todo.." name="comment" required = "required">       
+                            <button class="transparent-button">Post</button>
+                    </form>
+                </footer>
+                <div id = weather>
+                    <span></span>
+                    <span></span>
+                  </div> 
+            </article>   
+        </section>
+        <script src="js/greetings.js"></script>
+        <script src="js/clock.js"></script>
+        <script src="js/background.js"></script>
+        <script src="js/todo.js"></script>
+        <script src="js/geolocation.js"></script>
+    </body>
+</html>

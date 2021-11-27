@@ -1,0 +1,146 @@
+.hidden {
+    display: none;
+}
+/***배경 시작***/
+*{
+    padding: 0;
+    margin: 0;
+  }
+ul, li{
+    list-style: none;
+  }
+  
+button.transparent-button{
+    background-color: transparent;
+    border:0;
+    outline:0;
+    cursor: pointer;
+  }
+  
+.container {
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 20px 0;
+  }
+article.card{
+    width: 600px;
+    margin: 20px auto;
+    margin-bottom: 60px;
+    background: #fff;
+    border: 1px solid #c0c0c0;
+    border-radius: 3px;
+  }
+/***header 시작***/
+article.card header{
+    height: 40px;
+    padding: 10px;
+  }
+article.card header > div {
+    display: inline-block;
+    vertical-align: middle;
+  }
+.circle-image{
+    height: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+.circle-image > img {
+    height: 100%;
+    border-radius: 50%;
+  }
+.circle-image{
+    float: left;
+}
+.card-username {
+    padding: 10px 0;
+    font-weight: 900;
+    line-height: 20px;
+    margin-left: 5px;
+    font-size: 13px;
+    float: left;
+  }
+.option-more {
+    float: right;
+    padding: 7px;
+  }
+#background {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 10px;
+    padding-inline-start: 10px;
+}
+.main-picture > div {
+    overflow: hidden;
+    padding: 0;
+}
+.card-content {
+    padding: 2px 5px;
+    font-size: 13px;
+    margin-left:6px;
+  }
+.card-content li > div{
+    padding: 1px 0;
+  }
+.card-buttons {
+    padding: 0 5px;
+    margin-top: 5px;
+    position: relative;
+    left: 6px;
+  }
+.card-buttons>div{
+    display: inline-block;
+    margin-right: 10px;
+  }
+.card-buttons > div.last-card-button{
+    float: right;
+    margin-right: 0;
+    position: relative;
+    right: 8px;
+  }
+.card-content > ul > li > div> form{
+    display: inline-block;
+  }
+.card-content > ul > li > div> span{
+    font-size: 17;
+  }
+#clock{
+    color: #96d6e6;
+    margin-left: 7px;
+}
+.card-time{
+  display: inline-block;
+}
+footer.card-comment {
+    position: relative;
+    height:55px;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+footer.card-comment input{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    color: #606060;
+    padding: 0 15px;
+  }
+footer.card-comment button{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+footer.card-comment button {
+    color: #0095f6;
+    opacity: 0.5;
+    padding:10px 5px;
+    float: right;
+  }
+div#weather>span{
+  font-size: 15;
+  position: relative;
+  left: 8px;
+  bottom:3px;
+  color: #84bce2;
+}
